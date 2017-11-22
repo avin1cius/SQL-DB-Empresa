@@ -122,7 +122,7 @@ CREATE TABLE Funcionario(
 	FOREIGN KEY(Uf) 			REFERENCES UF(Sigla),
 	FOREIGN KEY(Funcao) 		REFERENCES Funcao(Codigo),
 	CONSTRAINT CHK_Sexo 		CHECK ( Sexo = 'M' OR Sexo = 'F'),
-	CONSTRAINT CHK_estado_civil CHECK ( estado_civil = 'S' OR estado_civil = 'C' OR estado_civil = 'D' OR 
+	CONSTRAINT CHK_estado_civil	CHECK ( estado_civil = 'S' OR estado_civil = 'C' OR estado_civil = 'D' OR 
 										estado_civil = 'V' OR estado_civil = 'O')
 );
 
@@ -165,4 +165,4 @@ CREATE TABLE Setor(
 );
 
 
-ALTER TABLE Funcionario ADD FOREIGN KEY(Setor) REFERENCES Setor(Codigo);*/
+ALTER TABLE Funcionario ADD FOREIGN KEY(Setor) REFERENCES Setor(Codigo);

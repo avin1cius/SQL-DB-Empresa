@@ -1,4 +1,4 @@
-SET FOREIGN_KEY_CHECKS=0;
+/*SET FOREIGN_KEY_CHECKS=0;*/
 /*Paises*/
 INSERT INTO Pais (sigla,nome) VALUES ('BR','Brasil');
 INSERT INTO Pais (sigla,nome) VALUES ('NZ','Nova Zelândia');
